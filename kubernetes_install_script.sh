@@ -1,6 +1,5 @@
 #!/bin/sh
-# Install k3d, nginx-controller, devspace
-
+# Installion of local k8s environment
 
 echo "Install local Kubernetes (k3d) cluster on wsl2"
 
@@ -14,10 +13,6 @@ echo 'wsl.exe -d $WSL_DISTRO_NAME -u root ip addr add 192.168.50.16/24 broadcast
 source ~/.profile
 echo "static ip $ip has been added to .profile"
 fi
-
-# Add nameserver to resolve.conf
-
-
 
 if [[ $(id -u) -ne 0 ]] ; 
 then echo "Please run as root" ;

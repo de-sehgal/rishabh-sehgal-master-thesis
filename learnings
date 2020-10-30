@@ -1,0 +1,3 @@
+What is .profile?
+In Linux, .profile extension is used for files in terminal programs. Shell profile used by Linux and Mac OS X terminal programs; contains definitions for a shell environment, such as environment variables, scripts to execute, and other instructions; used for storing pre-defined settings that are loaded when a shell program starts.
+

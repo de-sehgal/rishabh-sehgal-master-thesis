@@ -1,0 +1,4 @@
+#name of the distro
+lsb_release -sir
+echo $WSL_DISTRO_NAME
+ip a s| grep eth0:1| awk '{print $2}' | cut -d/ -f1
