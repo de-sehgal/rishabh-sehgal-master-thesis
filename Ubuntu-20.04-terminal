@@ -2,3 +2,8 @@
 lsb_release -sir
 echo $WSL_DISTRO_NAME
 ip a s| grep eth0:1| awk '{print $2}' | cut -d/ -f1
+ip addr del 192.168.50.16/24 dev eth0:1   
+ls /proc ps aux
+cat /etc/group
+ echo 'test' | sudo tee -a /etc/hosts > /dev/null
+ docker ps | awk '{print $NF}' | grep registry
