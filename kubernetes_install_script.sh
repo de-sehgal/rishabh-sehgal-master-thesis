@@ -67,3 +67,17 @@ chmod +x devspace;
 sudo mv devspace /usr/local/bin;
 
 echo "cluster deployment sucessfull"
+
+echo "mirrors:
+  "registry.localhost:5000":
+    endpoint:
+      - http://registry.localhost:5000" | tee $HOME/registries.yaml > /dev/null
+      
+
+echo '{
+    "insecure-registries" : [ "nexus.lstelcom.ads:18888" ]
+}' | sudo tee /etc/docker/daemon.json > /dev/null
+
+docker login -u docker -p docker123 nexus.lstelcom.ads:18888
+sudo service docker restart
+
