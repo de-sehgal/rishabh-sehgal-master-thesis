@@ -1,4 +1,0 @@
-cat /etc/docker/daemon.json has registry
-docker system prune for a full disk
-home/.docker/config.json for proxy settings fro the containers
-docker ps --latest docker ps --last 4 
