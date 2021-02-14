@@ -8,3 +8,6 @@ cat /etc/group
 echo 'test' | sudo tee -a /etc/hosts > /dev/null
 docker ps | awk '{print $NF}' | grep registry
 ss -lt command like netstat
+ps -axcho cmd:15,%cpu --sort=-%cpu |head
+free -h | awk '/^Mem:/ {print $3 "/" $2}'
+sudo apt install net-tools
